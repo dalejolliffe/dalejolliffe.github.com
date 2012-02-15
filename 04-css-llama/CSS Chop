@@ -1,0 +1,203 @@
+CSS - POSITIONING
+Week 4
+CDGD304 - Spring 2012
+http://cykod.github.com/deck-web345-s12/4/
+
+ORDER OF BUSINESS
+Homework Review
+Shuffle
+liannejean.github.com
+eduffy6.github.com
+marygrey.github.com
+philheck15.github.com
+dalejolliffe.github.com
+mimismom.github.com
+knivoro.github.com
+mify78.github.com
+jennpipp.github.com
+lrpurvis.github.com
+theonlyavatar.github.com
+steinerfamily.github.com
+ktiwefly.github.com
+atseng.github.com
+ericwyche.github.com
+Let's Talk CSS
+CASCADING STYLE SHEETS
+WHAT IS A STYLE?
+
+Available selectors
+
+
+
+
+Selectors
+
+Pay attention to your class and id names!
+
+PROPERTIES
+
+
+
+
+VALUES
+
+LAYOUT PROPERTIES
+LAYOUT = BOX MODEL
+
+
+
+Understanding floats + Positioning
+http://www.barelyfitz.com/screencast/html-training/css/positioning/
+
+POSITIONING 101
+IN CLASS EXERCISE 1: WE WANT THIS
+
+Positioning Exercise
+Run/Save
+
+ 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+<style>
+  #container 
+  { background-color:lightgray; margin:20px; height:400px;position:relative; }
+ 
+  #top-left { 
+   background-color:darkgray;
+   color:white;
+   padding:30px;
+   position:absolute;
+   top:0;
+   left:0;
+   }
+ 
+  #bottom-right { 
+   background-color:darkgray;
+   color:white;
+   padding:25px;
+   position:absolute;
+   bottom:0;
+   right:0;
+   }
+  
+  .block-container { position:relative;top:120px;
+   }
+  .block { float:left; background-color:red; margin:30px; height:50px; width:50px
+   }
+      
+</style>
+<div id='site'>
+Above Container
+<div id='container'>
+  <div id='top-left'>I'm in the top left!</div>
+  <div id='bottom-right'>I'm in the bottom right!</div>
+  <div class='block-container'>
+	  <div class='block'></div>
+	  <div class='block'></div>
+	  <div class='block'></div>
+	  <div class='block'></div>
+Techniques
+START WITH
+YOUR RESET
+Eric Meyer Reset
+http://meyerweb.com/eric/tools/css/reset/
+
+http://bit.ly/meyerreset
+CENTERING CONTENT
+Give it a width and set margin: 0 auto;
+section#content {
+  margin:0 auto;
+  width:960px;
+}
+	
+NITTY GRITTY
+
+
+
+BASIC CHOP 101
+CSS Code
+body { width:960px; margin:0 auto; }
+		
+header#site-header {
+  position:relative; height:80px;
+}
+
+#site-header h1 a { 
+  display:block;	
+  text-indent:-9999px;    
+  position:absolute;
+  width:300px; height:80px;
+  background:url(logo.png) no-repeat left top;
+}
+nav#top-nav { position:absolute; right:0px; top:0px; }
+
+nav#main-menu { height:30px; background-color:black; }
+nav#main-menu ul li { display:block; float:left; padding:0 5px; }
+nav#main-menu ul li a { display:block; color:white; padding:5px 5px; background-color:blue; }
+
+section#page-content { float:left; width:550px; padding:50px 20px; }
+aside#sidebar { float:right; width:220px; padding:50px 10px; }
+
+footer#site-footer {     clear:both; background-color:black;     color:white; padding:10px 0px;  }
+FLOATS, CLEARS AND CLEARFIX
+Clearfix
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+	}
+
+.clearfix { display: inline-block; }
+  html[xmlns] .clearfix { display: block; }
+  * html .clearfix { height: 1%; }
+
+In Class Exercise 2
+
+HOMEWORK
+Default paragraphs to two paragraphs, with floated images
+
+
+
+END RESULT
+
+
+
+Homework

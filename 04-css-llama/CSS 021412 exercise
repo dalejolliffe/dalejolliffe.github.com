@@ -1,0 +1,84 @@
+<style>
+  #container 
+  { background-color:lightgray; margin:20px; height:400px;position:relative; }
+
+  #top-left { 
+   background-color:darkgray;
+   color:white;
+   padding:30px;
+   position:absolute;
+   top:0;
+   left:0;
+   }
+
+  #bottom-right { 
+   background-color:darkgray;
+   color:white;
+   padding:25px;
+   position:absolute;
+   bottom:0;
+   right:0;
+   }
+  
+  .block-container { position:relative;top:120px;
+   }
+  .block { float:left; background-color:red; margin:30px; height:50px; width:50px
+   }
+      
+</style>
+<div id='site'>
+Above Container
+<div id='container'>
+  <div id='top-left'>I'm in the top left!</div>
+  <div id='bottom-right'>I'm in the bottom right!</div>
+  <div class='block-container'>
+	  <div class='block'></div>
+	  <div class='block'></div>
+	  <div class='block'></div>
+	  <div class='block'></div>
+  </div>
+</div>
+Below Container
+</div>
+<style>
+  #container 
+  { background-color:lightgray; margin:20px; height:400px;position:relative; }
+
+  #top-left { 
+   background-color:darkgray;
+   color:white;
+   padding:30px;
+   position:absolute;
+   top:0;
+   left:0;
+   }
+
+  #bottom-right { 
+   background-color:darkgray;
+   color:white;
+   padding:25px;
+   position:absolute;
+   bottom:0;
+   right:0;
+   }
+  
+  .block-container { position:relative;top:120px;
+   }
+  .block { float:left; background-color:red; margin:30px; height:50px; width:50px
+   }
+      
+</style>
+<div id='site'>
+Above Container
+<div id='container'>
+  <div id='top-left'>I'm in the top left!</div>
+  <div id='bottom-right'>I'm in the bottom right!</div>
+  <div class='block-container'>
+	  <div class='block'></div>
+	  <div class='block'></div>
+	  <div class='block'></div>
+	  <div class='block'></div>
+  </div>
+</div>
+Below Container
+</div>
